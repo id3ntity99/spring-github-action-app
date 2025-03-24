@@ -24,4 +24,9 @@ public class SpringGithubActionAppApplication {
     return appName + " " + appVersion;
   }
 
+  @GetMapping("/goodbye")
+  public String goodbye() {
+    return "Goodbye!";
+  }
+
 }
